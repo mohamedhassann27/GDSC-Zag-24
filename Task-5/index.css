@@ -1,0 +1,48 @@
+.container {
+  padding: 150px;
+  margin: auto auto auto;
+}
+.shape1,
+.shape2,
+.shape3 {
+  display: inline-block;
+  outline: 6px solid black;
+  padding: 20px 30px;
+  font-size: 20px;
+  margin: 10px;
+  background-color: rgb(204, 204, 204);
+}
+.shape1 {
+  display: inline;
+  border: 6px solid red;
+}
+.shape2 {
+  border: 6px solid blue;
+  border-right: 6px solid green;
+  border-left: 6px solid green;
+}
+.shape3 {
+  border-top: 6px dashed red;
+  border-left: 6px dashed yellow;
+  border-bottom: 6px dashed blue;
+  border-right: 6px dashed green;
+}
+.element {
+  width: 400px;
+  background-color: rgb(204, 204, 204);
+  margin: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  outline: 10px solid rgb(204, 204, 204);
+}
+.element-1 {
+  margin-top: 70px;
+  border-left: 7px solid rgba(255, 0, 0, 0.584);
+  border-spacing: 5px 6px;
+}
+.element-2 {
+  visibility: hidden;
+}
+.element-3 {
+  border-left: 7px solid rgba(4, 121, 4, 0.838);
+}
