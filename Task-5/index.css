@@ -1,10 +1,4 @@
-.container {
-  padding: 150px;
-  margin: auto auto auto;
-}
-.shape1,
-.shape2,
-.shape3 {
+.shape {
   display: inline-block;
   outline: 6px solid black;
   padding: 20px 30px;
@@ -36,7 +30,7 @@
   outline: 10px solid rgb(204, 204, 204);
 }
 .element-1 {
-  margin-top: 70px;
+  margin-top: 40px;
   border-left: 7px solid rgba(255, 0, 0, 0.584);
   border-spacing: 5px 6px;
 }
