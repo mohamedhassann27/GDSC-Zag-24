@@ -1,0 +1,72 @@
+table {
+  width: 60%;
+  margin-left: 100px;
+  text-transform: capitalize;
+  text-align: center;
+}
+th {
+  color: white;
+  background-color: rgb(39, 34, 34);
+  padding: 10px 15px;
+  font-size: larger;
+}
+td {
+  background-color: rgb(234, 234, 234);
+  padding: 15px 0px;
+  font-size: medium;
+}
+.button1 {
+  background-color: rgb(75, 75, 255);
+  color: white;
+  padding: 5px 15px;
+  border: none;
+  font-size: medium;
+  margin-right: 5px;
+}
+.button2 {
+  background-color: rgb(255, 0, 81);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  font-size: medium;
+}
+.list {
+  background-color: rgb(234, 234, 234);
+  padding: 1px 30px;
+  margin-bottom: 10px;
+  margin-left: 300px;
+  max-width: 25%;
+}
+li {
+  background-color: white;
+  margin-bottom: 5px;
+  padding: 6px;
+}
+.box {
+  background-color: rgb(234, 234, 234);
+  max-width: 50%;
+  padding: 10px;
+  margin-left: 150px;
+  text-align: center;
+}
+p {
+  background-color: rgb(180, 180, 180);
+  padding: 10px;
+  margin: 5px;
+  font-weight: 600;
+}
+.third,
+.half,
+.quarter {
+  display: flex;
+  justify-content: space-between;
+}
+.third p {
+  width: calc(100% / 3);
+}
+.half p {
+  width: calc(100% / 2);
+}
+.quarter p {
+  width: calc(100% / 4);
+}
