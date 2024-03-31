@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  hr {
+    width: 100vw;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  overflow: hidden;
+}
+.task1,
+.one,
+.two,
+.three,
+.task2,
+.task3,
+.task4 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.one,
+.two,
+.three {
+  width: 300px;
+  height: 60px;
+  background-color: #eee;
+}
+
+.two {
+  background-color: red;
+}
+.desc {
+  background-color: #eee;
+  padding: 20px 70px 20px 20px;
+  position: relative;
+  width: 350px;
+  border-left: 4px solid rgba(253, 0, 101, 0.958);
+}
+.desc::before {
+  content: attr(data-person);
+  position: absolute;
+  left: -110px;
+  background-color: #eee;
+  padding: 10px 15px;
+  top: 8px;
+  width: 50px;
+  font-size: larger;
+}
+.desc::after {
+  content: "";
+  position: absolute;
+  border: 12px solid;
+  border-color: transparent rgba(253, 0, 101, 0.958) transparent transparent;
+  left: -25px;
+  top: 17px;
+}
+.task3 {
+  flex-direction: row;
+}
+.element {
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-shadow: -5px -4px 2px 1px red, 5px 4px 2px 1px rgba(56, 8, 247, 0.886);
+  position: relative;
+  counter-increment: numOfElement;
+}
+.element::before {
+  content: counter(numOfElement);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  left: 40px;
+  top: -12px;
+}
+.element::after {
+  position: absolute;
+  content: "Element";
+  bottom: 40px;
+  left: 20px;
+  font-size: 18px;
+}
+.task4 {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 550px;
+  gap: 100px;
+}
+.card1,
+.card2 {
+  background-color: #eee;
+  width: calc(100% / 2);
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+}
+.button {
+  background-color: #03a9f4;
+  border: hidden;
+  width: 180px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  margin-bottom: 30px;
+}
+.price {
+  display: flex;
+  background-color: #d8d8d8;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.card2::before {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 1px;
+  background-color: #03a9f4;
+  left: -50px;
+  top: 0;
+}
+.card1::after {
+  position: absolute;
+  content: "or";
+  height: 20px;
+  width: 20px;
+  padding: 4px;
+  background-color: #03a9f4;
+  color: white;
+  border-radius: 50%;
+  right: -65px;
+  z-index: 1;
+  top: 45%;
+}
