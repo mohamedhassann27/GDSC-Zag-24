@@ -113,11 +113,11 @@ button:hover{
     position: relative;
 }
 .about .section__description{
-    gap: 2rem;
-
-    /* transition: transform 3s; */
+    gap: 1.5rem;
 }
-
+.about h2{
+    margin-bottom: 1.5rem;
+}
 .about img{
     width: 60%;
     height: 35rem;
