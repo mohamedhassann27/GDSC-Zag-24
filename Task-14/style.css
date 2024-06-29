@@ -245,8 +245,9 @@ footer{
     .menu img{
         max-width: 490px;
     }
-    
-    
+    footer{
+        min-width: 100vh;
+    }    
 }
 
 @media (min-width:768px) and (max-width:1023px){
