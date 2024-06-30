@@ -246,7 +246,7 @@ footer{
         max-width: 490px;
     }
     footer{
-        min-width: 100vh;
+        min-width: 100%;
     }    
 }
 
