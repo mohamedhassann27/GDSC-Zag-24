@@ -169,18 +169,19 @@ header{
 
 
 @media(max-width:767px){
+    body{
+        overflow-x: hidden;
+    }
     header{
         width: 767px;
         flex: 1;
         padding: 1rem 0;
-        overflow-x: hidden;
         ul{
             gap: .7rem;
         }
     }
     section{
         width: 767px;
-        overflow-x: hidden;
     }
     .container{
         margin: auto;
@@ -202,7 +203,9 @@ header{
         height: 500px;
             
         }
-        
+        button{
+            margin: auto;
+        }
     }
     .services{
         flex-direction: column;
