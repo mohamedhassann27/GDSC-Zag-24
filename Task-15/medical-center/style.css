@@ -179,6 +179,7 @@ header{
     }
     section{
         width: 767px;
+        overflow-x: hidden;
     }
     .container{
         margin: auto;
