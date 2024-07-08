@@ -168,7 +168,50 @@ header{
 }
 
 
-@media(max-width:767px){
+@media(max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        gap: 1rem;
+    }
+    ul{
+        display: none;
+    }
+    section{
+        width: 360px;
+        text-align: center;
+    }
+    .container{
+        width: 350px;
+        padding: 2.5rem 2rem;
+    }
+    #home{
+        background-position: right;
+        background-size: 800px 700px;
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 37px;
+    }
+    h3{
+        padding-left: 0;
+        font-size: 17px;
+    }
+    .container button{
+        transform: translateX(5rem);
+        padding: 12px 0 12px 15px;
+    }
+    .img1,.img2{
+        height: 350px;
+    }
+    .services{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media(min-width:481px) and (max-width:767px){
     body{
         overflow-x: hidden;
     }
