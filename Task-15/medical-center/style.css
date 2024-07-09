@@ -167,8 +167,8 @@ header{
     
 }
 
-
-@media(max-width:480px){
+/* my phone "not responsive" */
+/* @media(max-width:480px){
     body{
         overflow-x: hidden;
     }
@@ -210,6 +210,65 @@ header{
         gap: 2rem;
     }
 }
+ */
+
+/*other phone "responsive" */
+@media(max-width:480px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        gap: 1rem;
+        width: 350px;
+    }
+    li{
+        display: none;
+    }
+    section{
+        width: 360px;
+        text-align: center;
+    }
+    .container{
+        width: 350px;
+        padding: 2.5rem 2rem;
+        gap: 2rem;
+    }
+    #home{
+        background-position: right;
+        background-size: 800px 700px;
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 37px;
+    }
+    h3{
+        padding-left: 0rem;
+        font-size: 17px;
+        &::before{
+            display: none;
+        }
+    }
+    .container button{
+        transform: translateX(5rem);
+        padding: 12px 0 12px 15px;
+    }
+    #about{
+        margin-bottom: 53rem;
+    }
+    .img1{
+        transform: translate(11rem,34rem);
+        width: 250px;
+        height: 400px;
+    }
+    .img2{
+        transform: translateY(52rem);
+    }
+    .services{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 
 @media(min-width:481px) and (max-width:767px){
     body{
