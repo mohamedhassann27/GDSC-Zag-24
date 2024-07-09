@@ -219,17 +219,17 @@ header{
     }
     header{
         gap: 1rem;
-        width: 413px;
+        width: 410px;
     }
     li{
         display: none;
     }
     section{
-        width: 413px;
+        width: 410px;
         text-align: center;
     }
     .container{
-        width: 413px;
+        width: 410px;
         padding: 2.5rem 2rem;
         gap: 2rem;
     }
