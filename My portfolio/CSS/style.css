@@ -8,7 +8,8 @@
     --imgBackgroundColor:var(--blackColor);
     --btnBackgroundColor:var(--blackColor);
     --borderColor:var(--blackColor);
-    --transition:.3s;
+    --skillBackgroundColor:#eee;
+    --transition:.2s;
     scroll-behavior: smooth;
 }
 
@@ -163,15 +164,20 @@ header{
                     background-color: var(--btnBackgroundColor);
                     color: var(--whiteColor);
                     padding: .5rem 2.5rem;
+                    border-radius: 5px;
+                    transition: var(--transition);
+                    &:hover{background-color:var(--greenColor); }
                 }
                 .arrow{animation: upDown-3 1s infinite alternate ease-in-out;display: inline-block;}
             }
+            animation: leftToRight 2s alternate;
         }
         .bio__pic-cont{
             position: relative;
             max-width: 100%;
-            width: 100%;
-            animation: upDown1-5 1.3s infinite alternate ease-in-out;
+            width: 80rem;
+            /* animation: upDown1-5 1.3s infinite alternate ease-in-out; */
+            animation: rightToLeft 2s alternate ;
             img{
                 max-width: 100%;
             }
@@ -197,13 +203,36 @@ header{
         align-items: start;
         gap: 5rem;
         .skills__items{
-            display: flex;
-            flex-direction: column;
-            gap: 5rem;
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 4rem;
             .row{
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
-                column-gap: 10rem;
+                gap: 3rem;
+
+                div{
+                    background-color: var(--skillBackgroundColor);
+                    padding: 2rem ;
+                    gap: 4rem;
+                    display: flex;
+                    border-radius: 15px;
+                    align-items: center;
+                    transition: var(--transition);
+                    &:hover{
+                        background-color:#11c0ae;
+                        
+                    }
+
+                    .icon{
+                        margin-left: auto;
+                        font-size: 4.5rem;
+                        max-width: 4.5rem;
+                        max-height: 4.5rem;
+                        color: var(--blackColor);
+                        
+                    }
+                }
             }
         }
         p{
@@ -230,10 +259,32 @@ header{
                 gap: 4rem;
                 flex: 1;
                 div{flex: 1;}
-                img{
-                    max-width: 100%;
-                    height: 25rem;
+                .img-cont{
+                    position: relative;
+                    transition: var(--transition);
+                    &:hover{
+                        /* background-color:#eee; */
+                        background-color: rgb(55, 55, 255);
+                        z-index: 0;
+
+                        img{opacity: .7;}
+                        a{display: block; opacity: 1;}
                     }
+                    img{
+                        max-width: 100%;
+                        height: 25rem;
+                        }
+                        a{
+                            position: absolute;
+                            top: 10%;
+                            left: 15%;
+                            font-size: 5rem;
+                            padding: 6rem 10rem;
+                            color: var(--whiteColor);
+                            opacity: 0;
+                            transition: var(--transition);
+                        }
+                }
                 .project__desc{
                     display: flex;
                     flex-direction: column;
@@ -253,7 +304,7 @@ header{
                 .img1-cont,.img3-cont,.img5-cont{
                     animation: leftToRight 2s alternate;
                 }
-                .img2-cont,.img5-cont{
+                .img2-cont,.img4-cont{
                     animation: rightToLeft 2s alternate;
                 }
             }
@@ -266,7 +317,15 @@ header{
         background-color: var(--backgroundColor);
         gap: 10rem;
         p{font-size: 18px;}
-        a{margin: 1rem 0; display: block; text-decoration: underline; font-size: 18px; font-weight: 600;}
+        a{
+            margin: 1rem 0;
+            display: block; 
+            text-decoration: underline; 
+            font-size: 18px; 
+            font-weight: 600;
+            transition: var(--transition);
+            &:hover{color: #03a696;}
+        }
         .icons{
             display: flex;
             gap: 1rem;
@@ -278,7 +337,7 @@ header{
             input:first-child{margin-right: 1.5rem;}
             textarea{width: 100%;margin: 2rem 0 ;}
             div{
-                .submit{background-color: var(--blackColor); color: var(--whiteColor); padding: 1rem ;  font-size: 25px;
+                .submit{background-color: var(--btnBackgroundColor); color: var(--whiteColor); padding: 1rem ;  font-size: 25px;
                 width: 42%; cursor: pointer;}
                 position: relative;
                 .icon{
@@ -310,4 +369,5 @@ html:has(.toggle__input:checked){
     --btnBackgroundColor:var(--greenColor);
     --borderColor:var(--whiteColor);
     p,h1,h2,h3,.arrow,a,.link,.icon{color: var(--whiteColor);}
+    --skillBackgroundColor: #03a696;
 }
